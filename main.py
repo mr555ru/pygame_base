@@ -6,8 +6,6 @@ from pygame import *
 wwidth = 800
 wheight = 600
 
-display = (wwidth, wheight)
-
 bgcolor = "#000A0F"
 
 GAME_SPEED = 50
