@@ -1,3 +1,5 @@
+import sys
+
 import pygame
 from pygame import *
 
@@ -19,7 +21,6 @@ class Game():
         self.bgcolor = bgcolor
         self.game_speed = game_speed
         self.caption = game_title
-        self.dont_draw = False
         
     def init(self):
         pygame.init()
@@ -32,8 +33,7 @@ class Game():
         
     def exit(self):
         pygame.quit()
-        self.dont_draw = True
-    
+        
     def step(self):
         pass
     
@@ -41,9 +41,8 @@ class Game():
         pass
     
     def draw(self):
-        if not self.dont_draw:
-            self.screen.blit(self.bg, (0, 0))
-            pygame.display.update()
+        self.screen.blit(self.bg, (0, 0))
+        pygame.display.update()
 
 def main():
     game = Game(wwidth, wheight, bgcolor, GAME_SPEED, "dummy")
@@ -53,6 +52,7 @@ def main():
         for e in pygame.event.get():
             if e.type == QUIT:
                 game.exit()
+                sys.exit()
             elif e.type == game.UPDATE_GAME:
                 game.step()
             elif e.type == KEYDOWN or e.type == KEYUP:
