@@ -19,6 +19,7 @@ class Game():
         self.bgcolor = bgcolor
         self.game_speed = game_speed
         self.caption = game_title
+        self.dont_draw = False
         
     def init(self):
         pygame.init()
@@ -30,7 +31,8 @@ class Game():
         self.bg.fill(Color(self.bgcolor))
         
     def exit(self):
-        raise SystemExit, "Q"
+        pygame.quit()
+        self.dont_draw = True
     
     def step(self):
         pass
@@ -39,8 +41,9 @@ class Game():
         pass
     
     def draw(self):
-        self.screen.blit(self.bg, (0, 0))
-        pygame.display.update()
+        if not self.dont_draw:
+            self.screen.blit(self.bg, (0, 0))
+            pygame.display.update()
 
 def main():
     game = Game(wwidth, wheight, bgcolor, GAME_SPEED, "dummy")
