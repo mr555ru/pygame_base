@@ -1,0 +1,110 @@
+************* Module main
+I0011(locally-disabled):  1: : Locally disabling trailing-whitespace (C0303)
+I0011(locally-disabled):  1: : Locally disabling no-member (E1101)
+I0011(locally-disabled):  1: : Locally disabling too-many-instance-attributes (R0902)
+I0011(locally-disabled):  8: : Locally disabling wildcard-import (W0401)
+I0011(locally-disabled):  8: : Locally disabling unused-wildcard-import (W0614)
+I0011(locally-disabled): 31: : Locally disabling attribute-defined-outside-init (W0201)
+I0011(locally-disabled): 37: : Locally disabling invalid-name (C0103)
+I0011(locally-disabled): 37: : Locally disabling too-many-function-args (E1121)
+I0011(locally-disabled): 40: : Locally disabling no-self-use (R0201)
+I0011(locally-disabled): 48: : Locally disabling redefined-outer-name (W0621)
+I0011(locally-disabled): 63: : Locally disabling invalid-name (C0103)
+I0011(locally-disabled): 64: : Locally disabling undefined-variable (E0602)
+I0011(locally-disabled): 69: : Locally disabling undefined-variable (E0602)
+R0913(too-many-arguments): 21: Game.__init__: Too many arguments (6/5)
+
+
+Report
+======
+48 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |1          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |1      |1          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |6      |6          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |1      |1          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    pygame (main)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |45     |71.43 |45       |=          |
++----------+-------+------+---------+-----------+
+|docstring |8      |12.70 |8        |=          |
++----------+-------+------+---------+-----------+
+|comment   |2      |3.17  |2        |=          |
++----------+-------+------+---------+-----------+
+|empty     |8      |12.70 |8        |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |0      |0        |=          |
++-----------+-------+---------+-----------+
+|refactor   |1      |1        |=          |
++-----------+-------+---------+-----------+
+|warning    |0      |0        |=          |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++-------------------+------------+
+|message id         |occurrences |
++===================+============+
+|locally-disabled   |13          |
++-------------------+------------+
+|too-many-arguments |1           |
++-------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 9.79/10 (previous run: 9.79/10, +0.00)
+
